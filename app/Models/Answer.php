@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Answer extends Model
 {
     use HasFactory;
+
+
+    public function likes(){
+
+
+        return $this->hasMany(Like::class);
+    }
 }
