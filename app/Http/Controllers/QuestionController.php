@@ -28,13 +28,36 @@ class QuestionController extends Controller
      */
     public function store(QuestionRequest $request)
     {
+// decide if anonymous or public quesiotn
+
+
+
+
+
+
+$anonomysioty_determination = Session::get('anonymous');
+
+if ($anonomysioty_determination !== 'anonymous')
+{
+Question::create([
+
+
+
+    
+])
+
+
+
+}
+
+
         $question = Question::create([
   'content' => $request->content,
-  'asked_by' => Auth::user()
+  'asked_by' => Auth::user()->id
 
 
 
-        ])
+        ]);
     }
 
     /**
