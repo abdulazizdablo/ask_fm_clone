@@ -1,0 +1,13 @@
+form{
+
+display: flex;
+flex-direction: column;
+
+
+}
+body
+{
+
+
+    background:  no-repeat  center  url('welcome-bg-926f6494472f1c3d8fd38e2499c64654a7b399cf5f447b11ffdaa926aceddafb.jpg');
+}
